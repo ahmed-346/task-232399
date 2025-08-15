@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+span {
+    display: inline-block;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.container-nav{
+    width: 88%;
+    margin: auto;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+
+ header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    background-color: white;
+    z-index: 1000;
+} 
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    padding: 20px 0px;
+    background-color: white;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-img {
+    widtH: 50%;
+}
+
+.nav-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.nav-text ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-text ul li a {
+    padding:0 24px;
+    color: #091a23;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.nav-text ul li a:hover {
+    color: #fd7e14;
+}
+
+.btn-1 {
+    padding: 19px 47px;
+    border: 1px solid #ff5600;
+    color: #464d65;;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-1::after {
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: #ff5500;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.nav-text:hover .btn-1 {
+
+    color: white;
+}
+
+.nav-text:hover .btn-1::after  {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    z-index: 1 ;
+} 
+
+   /* <!-- discover  we belive-->   */
+
+.dicrover {
+    padding-bottom: 90px;
+}
+
+
+.main-img {
+    background-image: url(../img/h1_hero.png.jpg);
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+}   
+
+.discover-pra {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff5600;
+    margin-bottom: 44px;
+}
+
+.main-text h1 {
+    font-size: 87px;
+    width: 70%;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    transition: all .4s;
+}
+
+.main-text:hover h1 {
+    transform: translatex(190px);
+}
+
+.pra-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    width: 40%;
+}
+
+.main-text a {
+    color: white;
+}
+
+.Resurvation-btn {
+    background-color: #ff5500;
+    padding: 18px 44px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+}
+
+.Resurvation-btn::after {
+    content:"";
+    width: 0%;
+    height: 100%;
+    background-color: #091a233f;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+}
+
+.main-text:hover .Resurvation-btn::after  {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.chef-food .card {
+    width: 50%;
+}
+
+.chef-food  .row{
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.chef-img img {
+    width: 86%;
+}
+
+.chef-text .discover-pra{
+    margin-bottom: 20px;    
+}
+
+.chef-text h2 {
+    font-size: 49px;
+    width: 90%;
+    color: #212025;
+    margin-bottom: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.chef-text .pra-text {
+    widtH: 70%;
+}
+
